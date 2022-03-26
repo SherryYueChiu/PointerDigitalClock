@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- HTML Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>指針式電子鐘</title>
+    <meta name="description" content="指針式電子鐘">
+    <meta name="Author" content="玥餅" />
+    <link rev="made" href="mailto:sherryyue.c@protonmail.com" />
+    <link rel="icon" href="https://sherryyuechiu.github.io/PointerDigitalClock/images/logo/maskable_icon_x48.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Creation-Date" content="26-mar-2022 18:00:00" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://sherryyuechiu.github.io/PointerDigitalClock/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="指針式電子鐘">
+    <meta property="og:description" content="指針式電子鐘">
+    <meta property="og:image"
+        content="https://sherryyuechiu.github.io/PointerDigitalClock/images/logo/maskable_icon_x48.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="sherryyuechiu.github.io">
+    <meta property="twitter:url" content="https://sherryyuechiu.github.io/PointerDigitalClock/">
+    <meta name="twitter:title" content="指針式電子鐘">
+    <meta name="twitter:description" content="指針式電子鐘">
+    <meta name="twitter:image"
+        content="https://sherryyuechiu.github.io/PointerDigitalClock/images/logo/maskable_icon_x48.png">
+
+    <!-- libraries -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/moment.min.js"></script>
+
+    <!-- PWA -->
+    <link href="./manifest.json" rel="manifest">
+    <script src="./service-worker.js"></script>
+
+    <!-- main -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="clock">
+            <div class="digit">
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+            </div>
+            <div class="digit">
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+            </div>
+            <div class="digit">
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+            </div>
+            <div class="digit">
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+                <div class="mini-clock">
+                    <div class="pointer1"></div>
+                    <div class="pointer2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
