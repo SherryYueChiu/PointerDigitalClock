@@ -21,7 +21,6 @@ $clock-height: ($digit-height + $digit-gap * 2) * 2;
     height: $clock-height;
     position: absolute;
     left: calc(50% - 240px);
-    top: 0;
 }
 
 .digit {
